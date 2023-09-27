@@ -58,13 +58,13 @@ function resetForm() {
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("rollno").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("city").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("mobile").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("email").value = selectedRow.cells[3].innerHTML;
-    document.getElementById("gender").value = selectedRow.cells[4].innerHTML;
-    document.getElementById("course").value = selectedRow.cells[5].innerHTML;
-    document.getElementById("skill").value = selectedRow.cells[6].innerHTML;
+    document.getElementById("rollno").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("city").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("mobile").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("email").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("gender").value = selectedRow.cells[5].innerHTML;
+    document.getElementById("course").value = selectedRow.cells[6].innerHTML;
+    document.getElementById("skill").value = selectedRow.cells[7].innerHTML;
 }
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.fullName;
